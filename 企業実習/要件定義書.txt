@@ -19,15 +19,15 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
 
 ・プログラム名
  1.ログイン関連
-	index.jsp(ログイン画面)
-	Login.java(ログイン処理)
-	LoginLogic.java(ログイン判定)
+	index.jsp(ログイン画面)　作成
+	Login.java(ログイン処理)　作成
+	LoginLogic.java(ログイン判定)　作成
 
  2.メイン関連
 	main.jsp(メイン画面)
 
  2.1ユーザー参照(メイン関連)
-	User.java(ユーザークラス作成)
+	User.java(ユーザークラス作成)　作成
 	GetUserListLogic.java(ユーザーデータを取得)
 	user.jsp(ユーザー参照、ユーザー登録・削除画面)
 
@@ -94,7 +94,7 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
 	Logout.java(ログアウト処理)
 
  3.データベース操作関連
-	userDAO.java(ユーザーデータをデータベースより参照・書き込み)
+	userDAO.java(ユーザーデータをデータベースより参照・書き込み)　作成
 	staffDAO.java(職員データををデータベースより参照・書き込み)
 	customerDAO.java(利用者データををデータベースより参照・書き込み)
 
@@ -107,3 +107,38 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
 
 別途添付
 
+・データベース　登録事項
+
+ 1.USER
+	ID（英数字10文字　VARCHAR(10)　重複不可）
+	パスワード（英数字8文字　VARCHAR(10)）
+	氏名（指定なし　VARCHAR(10)）
+	管理区分（職員OR管理職　VARCHAR(10)）
+	最終ログイン日時（年月日　時分秒　TIMESTAMP）
+	最終ログアウト日時（年月日　時分秒　TIMESTAMP）
+
+ 2.STAFF
+	職員番号（英数字10文字　VARCHAR(10)　重複不可 IDとの相関関係はなし）
+	氏名（指定なし　VARCHAR(10)）
+	部署（）
+	役職（）
+	年齢（数字　INTEGER(3)）
+	性別（男性OR女性　VARCHAR(2)）
+	入社年月日（年月日　DATE）
+	在職年数（数字　INTEGER(2)）
+	資格（）
+	備考（指定なし　VARCHAR(255)）
+	最終評価日時（年月日　時分秒　TIMESTAMP）
+	評価者ID（英数字10文字　VARCHAR(10)　重複不可　USERのIDと一致）
+
+ 3.CUSTOMER
+	利用者番号（英数字10文字　VARCHAR(10)　重複不可 IDとの相関関係はなし）
+	氏名（指定なし　VARCHAR(10)）
+	年齢（数字　INTEGER(3)）
+	性別（男性OR女性　VARCHAR(2)）
+	入社年月日（年月日　DATE）
+	在職年数（数字　INTEGER(2)）
+	資格（）
+	備考（指定なし　VARCHAR(255)）
+	最終評価日時（年月日　時分秒　TIMESTAMP）
+	評価者ID（英数字10文字　VARCHAR(10)　重複不可　USERのIDと一致）

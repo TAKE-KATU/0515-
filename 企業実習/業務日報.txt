@@ -3,3 +3,13 @@
 ・要件定義書作成
 
 ・画面遷移図作成
+
+2025年5月16日
+
+・要件定義書作成
+
+・画面遷移図（全体）作成
+
+・画面詳細作成
+
+・プログラム作成（index.jsp、Login.java、LoginLogic.java、User.java、userDAO.java）
