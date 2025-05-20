@@ -32,16 +32,16 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
 	user.jsp(ユーザー参照、ユーザー登録・削除画面)
 
  2.1.1新規ユーザー登録(メイン→ユーザー関連)
-	newUser.jsp(新規ユーザー　登録画面)
+	newUser.jsp(新規ユーザー　登録画面)　作成
 	NewUser.java(新規ユーザー　登録処理)
-	newUserSucces.jsp(新規ユーザー　登録完了画面)
-	newUserError.jsp(新規ユーザー　登録失敗画面)
+	newUserSucces.jsp(新規ユーザー　登録完了画面)　作成
+	newUserError.jsp(新規ユーザー　登録失敗画面)　作成
 
  2.1.2ユーザー削除(メイン→ユーザー関連)
-	userDelete.jsp(ユーザー　削除画面)
+	userDelete.jsp(ユーザー　削除画面)　作成
 	UserDelete.java(ユーザー　削除処理)
-	userDeleteSucces.jsp(ユーザー　削除完了画面)
-	userDeleteError.jsp(ユーザー　削除失敗画面)
+	userDeleteSucces.jsp(ユーザー　削除完了画面)　作成
+	userDeleteError.jsp(ユーザー　削除失敗画面)　作成
 
  2.2職員関連(メイン関連)
 	Staff.java(職員クラス作成)
