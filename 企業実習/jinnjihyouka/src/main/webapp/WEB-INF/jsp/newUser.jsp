@@ -19,11 +19,11 @@
 
 <form action="NewUser" method="post">
 　<label for="name">氏名：</label>
-  <input type="text" id="name" name="name"><br>
+  <input type="text" id="name" name="name" required><br>
   <label for="id">ID：</label>
-  <input type="text" id="id" name="id"><br>
+  <input type="text" id="id" name="id" pattern="[A-Za-z0-9]{10}" title="半角英数字10桁で入力してください" required><br>
   <label for="pass">パスワード：</label>
-  <input type="password" id="pass" name="pass"><br>
+  <input type="password" id="pass" name="pass" pattern="[A-Za-z0-9]{8}" title="半角英数字8桁で入力してください" required>><br>
   <input type="submit" value="新規ユーザー登録"><br>
 </form>
 

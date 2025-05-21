@@ -1,0 +1,52 @@
+<mxfile host="65bd71144e">
+    <diagram id="myyLHB51UO-aXW6WOLaH" name="ページ1">
+        <mxGraphModel dx="1386" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;newStaffError.jsp&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=default;fillColor=none;strokeWidth=3;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="8" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="endArrow=none;dashed=1;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="80" as="sourcePoint"/>
+                        <mxPoint x="1160" y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;↓より下画面&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="185" y="50" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="人事評価システム（仮）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;labelBackgroundColor=none;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="140" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;名前&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="198" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="職員登録フォーム" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=default;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="38" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="&lt;u&gt;&lt;font style=&quot;color: rgb(0, 204, 204);&quot;&gt;ログアウト&lt;/font&gt;&lt;/u&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#00FFFF;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="220" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;職員一覧に戻る&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="375" y="414" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;メイン画面に戻る&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="414" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;新規ユーザー登録失敗&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="310" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="&lt;span style=&quot;font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bspan%20style%3D%26quot%3Bpadding%3A%200px%200px%200px%202px%3B%26quot%3B%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bcolor%3A%20rgb(204%2C%20204%2C%20204)%3B%20font-family%3A%20%26amp%3Bquot%3B%EF%BC%AD%EF%BC%B3%20%E3%82%B4%E3%82%B7%E3%83%83%E3%82%AF%26amp%3Bquot%3B%3B%20font-size%3A%209pt%3B%20white-space-collapse%3A%20preserve%3B%26quot%3B%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bcolor%3A%20rgb(217%2C%20232%2C%20247)%3B%26quot%3B%26gt%3B%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%A8%E3%83%A9%E3%83%BC%E3%80%81%E3%81%BE%E3%81%9F%E3%81%AF%E5%85%A5%E5%8A%9B%E5%86%85%E5%AE%B9%E3%81%AB%E5%95%8F%E9%A1%8C%E3%81%8C%E3%81%82%E3%82%8B%E5%8F%AF%E8%83%BD%E6%80%A7%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82%26lt%3B%2Fspan%26gt%3B%26lt%3B%2Fspan%26gt%3B%26lt%3B%2Fspan%26gt%3B%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3BlabelBorderColor%3Dnone%3BlabelBackgroundColor%3Dnone%3BstrokeWidth%3D5%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22315%22%20y%3D%22348%22%20width%3D%22390%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="328" width="20" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="サーバーエラー、または入力内容に問題がある可能性があります。&lt;div&gt;もう一度お試しください&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="340" width="380" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;新規職員登録に戻る&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="414" width="160" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

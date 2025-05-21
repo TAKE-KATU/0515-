@@ -46,22 +46,22 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
  2.2職員関連(メイン関連)
 	Staff.java(職員クラス作成)
 	GetStaffListLogic.java(職員データを取得)
-	staff.jsp(職員参照、職員登録・削除・評価)
+	staff.jsp(職員参照、職員登録・削除・評価) 作成
 
  2.2.1新規職員登録(メイン→職員関連)
-	newStaff.jsp(新規職員　登録画面)
+	newStaff.jsp(新規職員　登録画面)　作成
 	NewStaff.java(新規職員　登録処理)
-	newStaffSucces.jsp(新規職員　登録完了画面)
-	newStaffError.jsp(新規職員　登録失敗画面)
+	newStaffSucces.jsp(新規職員　登録完了画面)　作成
+	newStaffError.jsp(新規職員　登録失敗画面)　作成
 
  2.2.2職員削除(メイン→職員関連)
-	staffDelete.jsp(職員　削除画面)
+	staffDelete.jsp(職員　削除画面)　作成
 	StaffDelete.java(職員　削除処理)
-	stafDeleteSucces.jsp(職員　削除完了画面)
-	stafDeleteError.jsp(職員　削除失敗画面)
+	staffDeleteSucces.jsp(職員　削除完了画面)　作成
+	staffDeleteError.jsp(職員　削除失敗画面)　作成
 
  2.2.3職員評価(メイン→職員関連)
-	staffEvaluation.jsp(職員　評価画面)
+	staffEvaluation.jsp(職員　評価画面)　作成
 	StaffEvaluation.java(職員　評価処理)
 	staffEvaluationSucces.jsp(職員　評価完了画面)
 	staffEvaluationError.jsp(職員　評価失敗画面)
@@ -111,9 +111,9 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
 
  1.USER
 	ID（英数字10文字　VARCHAR(10)　重複不可）
-	パスワード（英数字8文字　VARCHAR(10)）
+	パスワード（英数字8文字　VARCHAR(8)）
 	氏名（指定なし　VARCHAR(10)）
-	管理区分（職員OR管理職　VARCHAR(10)）
+	管理区分（職員OR管理職　VARCHAR(3)）
 	最終ログイン日時（年月日　時分秒　TIMESTAMP）
 	最終ログアウト日時（年月日　時分秒　TIMESTAMP）
 
@@ -122,11 +122,12 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
 	氏名（指定なし　VARCHAR(10)）
 	部署（）
 	役職（）
-	年齢（数字　INTEGER(3)）
-	性別（男性OR女性　VARCHAR(2)）
+	年齢（数字　INTEGER(2)）
+	性別（男性OR女性ORその他　VARCHAR(3)）
 	入社年月日（年月日　DATE）
 	在職年数（数字　INTEGER(2)）
-	資格（）
+	資格1（国家資格）（指定なし　VARCHAR(255)）
+	資格2（民間資格）（指定なし　VARCHAR(255)）
 	備考（指定なし　VARCHAR(255)）
 	最終評価日時（年月日　時分秒　TIMESTAMP）
 	評価者ID（英数字10文字　VARCHAR(10)　重複不可　USERのIDと一致）
@@ -134,11 +135,54 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
  3.CUSTOMER
 	利用者番号（英数字10文字　VARCHAR(10)　重複不可 IDとの相関関係はなし）
 	氏名（指定なし　VARCHAR(10)）
-	年齢（数字　INTEGER(3)）
-	性別（男性OR女性　VARCHAR(2)）
+	年齢（数字　INTEGER(2)）
+	性別（男性OR女性ORその他　VARCHAR(3)）
 	入社年月日（年月日　DATE）
 	在職年数（数字　INTEGER(2)）
-	資格（）
+	資格1（国家資格）（指定なし　VARCHAR(255)）
+	資格2（民間資格）（指定なし　VARCHAR(255)）
 	備考（指定なし　VARCHAR(255)）
 	最終評価日時（年月日　時分秒　TIMESTAMP）
 	評価者ID（英数字10文字　VARCHAR(10)　重複不可　USERのIDと一致）
+
+ 4.STAFF_EVALUATION
+	職員番号（英数字10文字　VARCHAR(10)　重複不可 IDとの相関関係はなし）
+	氏名（指定なし　VARCHAR(10)）
+	部署（）
+	役職（）
+	評価項目1
+	評価項目2
+	評価項目3
+	評価項目4
+	評価項目5
+	評価項目6
+	評価項目7
+	評価項目8
+	評価項目9
+	評価項目10
+	評価結果
+	備考（指定なし　VARCHAR(255)）
+	最終評価日時（年月日　時分秒　TIMESTAMP）
+	評価者ID（英数字10文字　VARCHAR(10)　重複不可　USERのIDと一致）
+
+ 3.CUSTOMER_EVALUATION
+	利用者番号（英数字10文字　VARCHAR(10)　重複不可 IDとの相関関係はなし）
+	氏名（指定なし　VARCHAR(10)）
+	評価項目1
+	評価項目2
+	評価項目3
+	評価項目4
+	評価項目5
+	評価項目6
+	評価項目7
+	評価項目8
+	評価項目9
+	評価項目10
+	評価結果
+	備考（指定なし　VARCHAR(255)）
+	最終評価日時（年月日　時分秒　TIMESTAMP）
+	評価者ID（英数字10文字　VARCHAR(10)　重複不可　USERのIDと一致）
+
+
+・備考
+各データ削除前に確認画面の追加検討　5/21
