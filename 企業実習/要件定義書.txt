@@ -24,12 +24,12 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
 	LoginLogic.java(ログイン判定)　作成
 
  2.メイン関連
-	main.jsp(メイン画面)
+	main.jsp(メイン画面)　作成
 
  2.1ユーザー参照(メイン関連)
 	User.java(ユーザークラス作成)　作成
 	GetUserListLogic.java(ユーザーデータを取得)
-	user.jsp(ユーザー参照、ユーザー登録・削除画面)
+	user.jsp(ユーザー参照、ユーザー登録・削除画面)　作成
 
  2.1.1新規ユーザー登録(メイン→ユーザー関連)
 	newUser.jsp(新規ユーザー　登録画面)　作成
@@ -86,11 +86,11 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
  2.3.3利用者評価(メイン→利用者関連)
 	customerEvaluation.jsp(利用者　評価画面)　作成
 	CustomerEvaluation.java(利用者　評価処理)
-	customerEvaluationSucces.jsp(利用者　評価完了画面)
+	customerEvaluationSucces.jsp(利用者　評価完了画面) 作成
 	customerEvaluationError.jsp(利用者　評価失敗画面)
 
  2.4ログアウト処理(メイン関連)
-	logout.jsp(ログアウト画面)
+	logout.jsp(ログアウト画面)　作成
 	Logout.java(ログアウト処理)
 
  3.データベース操作関連
