@@ -63,28 +63,28 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
  2.2.3職員評価(メイン→職員関連)
 	staffEvaluation.jsp(職員　評価画面)　作成
 	StaffEvaluation.java(職員　評価処理)
-	staffEvaluationSucces.jsp(職員　評価完了画面)
-	staffEvaluationError.jsp(職員　評価失敗画面)
+	staffEvaluationSucces.jsp(職員　評価完了画面) 作成
+	staffEvaluationError.jsp(職員　評価失敗画面)　作成
 
  2.3利用者関連(メイン関連)
 	Customer.java(利用者クラス作成)
 	GetCustomerListLogic.java(利用者データを取得)
-	customer.jsp(利用者参照、利用者登録・削除・評価)
+	customer.jsp(利用者参照、利用者登録・削除・評価)　作成
 
  2.3.1新規利用者登録(メイン→利用者関連)
-	newCustomer.jsp(新規利用者　登録画面)
+	newCustomer.jsp(新規利用者　登録画面)　作成
 	NewCustomer.java(新規利用者　登録処理)
-	newCustomerSucces.jsp(新規利用者　登録完了画面)
-	newCustomerError.jsp(新規利用者登録　失敗画面)
+	newCustomerSucces.jsp(新規利用者　登録完了画面)　作成
+	newCustomerError.jsp(新規利用者登録　失敗画面)　作成
 
  2.3.2利用者削除(メイン→利用者関連)
-	customerDelete.jsp(利用者　削除画面)
+	customerDelete.jsp(利用者　削除画面)　作成
 	CustomerDelete.java(利用者　削除処理)
-	customerDeleteSucces.jsp(利用者　削除完了画面)
-	customerDeleteError.jsp(利用者　削除失敗画面)
+	customerDeleteSucces.jsp(利用者　削除完了画面)　作成
+	customerDeleteError.jsp(利用者　削除失敗画面)　作成
 
  2.3.3利用者評価(メイン→利用者関連)
-	customerEvaluation.jsp(利用者　評価画面)
+	customerEvaluation.jsp(利用者　評価画面)　作成
 	CustomerEvaluation.java(利用者　評価処理)
 	customerEvaluationSucces.jsp(利用者　評価完了画面)
 	customerEvaluationError.jsp(利用者　評価失敗画面)
@@ -102,6 +102,8 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
 	USER(ユーザーデータ)
 	STAFF(職員データ)
 	CUSTOMER(利用者データ)
+	STAFF_EVALUATION(職員評価)
+	CUSTOMER_EVALUATION(利用者評価)
 
 ・画面遷移図
 

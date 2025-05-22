@@ -10,7 +10,7 @@
 <body>
 <h1>人事評価システム</h1>
 <p>
-さん、ログイン中
+<%= loginUser.getName() %>さん、ログイン中
 <a href="Logout">ログアウト</a>
 </p>
 

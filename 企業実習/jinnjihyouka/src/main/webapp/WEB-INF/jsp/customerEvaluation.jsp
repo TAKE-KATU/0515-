@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>職員評価</title>
+<title>利用者評価</title>
 <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
 </head>
 <body>
@@ -17,9 +17,9 @@
 
 <h2>職員評価</h2>
 
-<form action="StaffEvaluation" method="post">
-　<label for="staffNumber">職員番号：</label>
-  <input type="text" id="staffNumber" name="staffNumber" pattern="[A-Za-z0-9]{10}" title="半角英数字10桁で入力してください" required><br>
+<form action="CustomerEvaluation" method="post">
+　<label for="customerNumber">利用者番号：</label>
+  <input type="text" id="customerNumber" name="customerNumber" pattern="[A-Za-z0-9]{10}" title="半角英数字10桁で入力してください" required><br>
   
   <label for="name">氏名：</label>
   <input type="text" id="name" name="name" required><br>
@@ -57,10 +57,10 @@
   <label for="remarks">備考：</label>
   <input type="text" id="remarks" name="remarks0"><br>
   
-  <input type="submit" value="職員評価"><br>
+  <input type="submit" value="利用者評価"><br>
 </form>
 
-<a href="staff">職員一覧に戻る</a>
+<a href="customer">利用者一覧へ戻る</a>
 <a href="main">メイン画面へ戻る</a>
 
 </body>

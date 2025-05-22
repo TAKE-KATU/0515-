@@ -29,3 +29,11 @@
 ・画面詳細作成
 
 ・プログラム作成（staff.jsp、newStaff.jsp、newStaffSucces.jsp、newStaffError.jsp、staffDelete.jsp、staffDeleteSucces.jsp、staffDeleteError.jsp、staffEvaluation.jsp）
+
+2025年5月22日
+
+・要件定義書　修正
+
+・画面詳細作成
+
+・プログラム作成(customer.jsp、newCustomer.jsp、newCustomerSucces.jsp、newCustomerError.jsp、customerDelete.jsp、customerDeleteSucces.jsp、customerDeleteError.jsp、customerEvaluation.jsp)
