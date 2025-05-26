@@ -20,7 +20,8 @@
 
 ・画面詳細作成
 
-・プログラム作成（newUser.jsp、newUserSucces.jsp、newUserError.jsp、userDeleteSucces.jsp、userDeleteError.jsp）
+・プログラム作成（newUser.jsp、newUserSucces.jsp、newUserError.jsp、userDeleteSucces.jsp、
+userDeleteError.jsp）
 
 2025年5月21日
 
@@ -28,7 +29,8 @@
 
 ・画面詳細作成
 
-・プログラム作成（staff.jsp、newStaff.jsp、newStaffSucces.jsp、newStaffError.jsp、staffDelete.jsp、staffDeleteSucces.jsp、staffDeleteError.jsp、staffEvaluation.jsp）
+・プログラム作成（staff.jsp、newStaff.jsp、newStaffSucces.jsp、newStaffError.jsp、staffDelete.jsp、
+staffDeleteSucces.jsp、staffDeleteError.jsp、staffEvaluation.jsp）
 
 2025年5月22日
 
@@ -36,4 +38,13 @@
 
 ・画面詳細作成
 
-・プログラム作成(customer.jsp、newCustomer.jsp、newCustomerSucces.jsp、newCustomerError.jsp、customerDelete.jsp、customerDeleteSucces.jsp、customerDeleteError.jsp、customerEvaluation.jsp)
+・プログラム作成(customer.jsp、newCustomer.jsp、newCustomerSucces.jsp、newCustomerError.jsp、
+customerDelete.jsp、customerDeleteSucces.jsp、customerDeleteError.jsp、customerEvaluation.jsp)
+
+2025年5月26日
+
+・要件定義書　修正
+
+・プログラム作成(UserServlet.java、NewUserServlet.java、UserDeleteServlet.java、NewStaffServlet.java、
+StaffDeleteServlet.java、StaffEvaluationServlet.java、NewCustomerServlet.java、CustomerDeleteServlet.java、
+CustomerEvaluationServlet.java)
