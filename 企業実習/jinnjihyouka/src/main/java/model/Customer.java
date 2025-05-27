@@ -3,11 +3,9 @@ package model;
 import java.sql.Timestamp;
 import java.time.LocalDate;
 
-public class Staff {
-    private String staffId;
+public class Customer {
+    private String customerId;
     private String name;
-    private String department;
-    private String position;
     private int age;
     private String gender;
     private LocalDate dateOfHire;
@@ -21,23 +19,21 @@ public class Staff {
 
 
     // デフォルトコンストラクタ
-    public Staff() {}
+    public Customer() {}
 
     // 基本コンストラクタ
-    public Staff(String staffId, String name) {
-        this.staffId = staffId;
+    public Customer(String customerId, String name) {
+        this.customerId = customerId;
         this.name = name;
     }
 
     // フルコンストラクタ
-    public Staff(String staffId, String name, String department, String position,
-    		     int age, String gender, LocalDate dateOfHire, int employmentPeriod,
-    		      String license, String certification, String remarks,
-    		      Timestamp lastEvaluationDateAndTime, String evaluationUserId) {
-        this.staffId = staffId;
+    public Customer(String customerId, String name, int age, String gender,
+    				LocalDate dateOfHire, int employmentPeriod,
+    				String license, String certification, String remarks,
+    				Timestamp lastEvaluationDateAndTime, String evaluationUserId) {
+    	this.customerId = customerId;
         this.name = name;
-        this.department = department;
-        this.position = position;
         this.age = age;
         this.gender = gender;
         this.dateOfHire = dateOfHire;
@@ -50,10 +46,8 @@ public class Staff {
     }
 
     // Getters
-    public String getStaffId() { return staffId; }
+    public String getCustomerId() { return customerId; }
     public String getName() { return name; }
-    public String getDepartment() { return department; }
-    public String getPosition() { return position; }
     public int getAge() { return age; }
     public String getGender() { return gender; }
     public LocalDate getDateOfHire() { return dateOfHire; }
@@ -64,12 +58,9 @@ public class Staff {
     public Timestamp getLastEvaluationDateAndTime() { return lastEvaluationDateAndTime; }
     public String getEvaluationUserId() { return evaluationUserId; }
 
-
     // Setters
-    public void setStaffId(String staffId) { this.staffId = staffId; }
+    public void setCustomerId(String customerId) { this.customerId = customerId; }
     public void setName(String name) { this.name = name; }
-    public void setDepartment(String department) { this.department = department; }
-    public void setPosition(String position) { this.position = position; }
     public void setAge(int age) { this.age = age; }
     public void setGender(String gender) { this.gender = gender; }
     public void setDateOfHire(LocalDate dateOfHire) { this.dateOfHire = dateOfHire; }
@@ -79,5 +70,4 @@ public class Staff {
     public void setRemarks(String remarks) { this.remarks = remarks; }
     public void setLastEvaluationDateAndTime(Timestamp lastEvaluationDateAndTime) { this.lastEvaluationDateAndTime = lastEvaluationDateAndTime; }
     public void setEvaluationUserId(String evaluationUserId) { this.evaluationUserId = evaluationUserId; }
-
 }

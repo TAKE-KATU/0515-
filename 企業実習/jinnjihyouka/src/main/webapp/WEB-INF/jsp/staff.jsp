@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%@ page import="java.util.List" %>
+<%@ page import="model.Staff" %>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -10,24 +12,38 @@
 <body>
 <h1>人事評価システム</h1>
 <p>
+<%
+    model.User loginUser = (model.User) session.getAttribute("loginUser");
+    if (loginUser == null) {
+        response.sendRedirect("Login"); // 未ログインならログイン画面へ
+        return;
+    }
+%>
 <%= loginUser.getName() %>さん、ログイン中
 <a href="Logout">ログアウト</a>
 </p>
 
 <!--表↓-->
-<p>職員一覧</p>
-<p>職員番号</p>
-<p>氏名</p>
-<p>部署</p>
-<p>役職</p>
-<p>最終評価日時</p>
-<p>評価者ID</p>
-<p>職員番号（履歴）</p>
-<p>氏名（履歴）</p>
-<p>部署（履歴）</p>
-<p>役職（履歴）</p>
-<p>最終評価日時（履歴）</p>
-<p>評価者ID（履歴）</p>
+<h1>職員一覧</h1>
+<table border="1">
+    <tr>
+        <th>ID</th><th>氏名</th><th>部署</th><th>役職</th><th>備考</th><th>最終評価日時</th><th>評価者ID</th>
+    </tr>
+    <%
+        List<Staff> staffList = (List<Staff>) request.getAttribute("staffList");
+        for (Staff s : staffList) {
+    %>
+    <tr>
+        <td><%= s.getStaffId() %></td>
+        <td><%= s.getName() %></td>
+        <td><%= s.getDepartment() %></td>
+        <td><%= s.getPosition() %></td>
+        <td><%= s.getRemarks() %></td>
+        <td><%= s.getLastEvaluationDateAndTime() %></td>
+        <td><%= s.getEvaluationUserId() %></td>
+    </tr>
+    <% } %>
+</table>
 <!--表↑-->
 
 
