@@ -28,7 +28,7 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
 
  2.1ユーザー参照(メイン関連)
 	User.java(ユーザークラス作成)　作成
-	UserServlet.java(ユーザークラス作成)　作成
+	UserServlet.java(ユーザークラス遷移)　作成
 	UserListServlet.java(ユーザーデータを取得)　作成
 	user.jsp(ユーザー参照、ユーザー登録・削除画面)　作成
 
@@ -46,6 +46,7 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
 
  2.2職員関連(メイン関連)
 	Staff.java(職員クラス作成) 作成
+	StaffServlet.java(画面遷移)　作成
 	StaffListServlet.java(職員データを取得)　作成
 	staff.jsp(職員参照、職員登録・削除・評価) 作成
 
@@ -69,6 +70,7 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
 
  2.3利用者関連(メイン関連)
 	Customer.java(利用者クラス作成)　作成
+	CustomerServlet.java（画面遷移）　作成
 	CustomerListServlet.java(利用者データを取得)
 	customer.jsp(利用者参照、利用者登録・削除・評価)　作成
 
@@ -110,81 +112,81 @@ H2データベース(ユーザーデータ（システムIDおよびパスワー
 
 別途添付
 
-・データベース　登録事項
+・データベース（jdbc:h2:~/desktop/DB/jinji）　登録事項
 
- 1.USER
-	ID（英数字10文字　VARCHAR(10)　重複不可）
-	パスワード（英数字8文字　VARCHAR(8)）
-	氏名（指定なし　VARCHAR(10)）
-	管理区分（職員OR管理職　VARCHAR(3)）
+ 1.USERS　作成
+	ID（英数字20文字　VARCHAR(10)　重複不可）
+	パスワード（英数字8文字　VARCHAR(100)）
+	氏名（指定なし　VARCHAR(100)）
+	管理区分（職員(STA)OR管理職(ADM)　VARCHAR(3)）
 	最終ログイン日時（年月日　時分秒　TIMESTAMP）
 	最終ログアウト日時（年月日　時分秒　TIMESTAMP）
 
- 2.STAFF
+ 2.STAFF　作成
 	職員番号（英数字10文字　VARCHAR(10)　重複不可 IDとの相関関係はなし）
-	氏名（指定なし　VARCHAR(10)）
-	部署（指定なし　VARCHAR(10)）
-	役職（指定なし　VARCHAR(10)）
-	年齢（数字　INTEGER(2)）
-	性別（男性OR女性ORその他　VARCHAR(3)）
+	氏名（指定なし　VARCHAR(100)）
+	部署（指定なし　VARCHAR(100)）
+	役職（指定なし　VARCHAR(100)）
+	年齢（数字　INT）
+	性別（男性OR女性ORその他　VARCHAR(10)）
 	入社年月日（年月日　DATE）
-	在職年数（数字　INTEGER(2)）
-	資格1（国家資格）（指定なし　VARCHAR(255)）
-	資格2（民間資格）（指定なし　VARCHAR(255)）
+	在職年数（数字　INT）
+	資格1（国家資格）（指定なし　VARCHAR(100)）
+	資格2（民間資格）（指定なし　VARCHAR(100)）
 	備考（指定なし　VARCHAR(255)）
 	最終評価日時（年月日　時分秒　TIMESTAMP）
 	評価者ID（英数字10文字　VARCHAR(10)　重複不可　USERのIDと一致）
 
- 3.CUSTOMER
+ 3.CUSTOMER　作成
 	利用者番号（英数字10文字　VARCHAR(10)　重複不可 IDとの相関関係はなし）
-	氏名（指定なし　VARCHAR(10)）
-	年齢（数字　INTEGER(2)）
-	性別（男性OR女性ORその他　VARCHAR(3)）
+	氏名（指定なし　VARCHAR(100)）
+	年齢（数字　INT）
+	性別（男性OR女性ORその他　VARCHAR(10)）
 	入社年月日（年月日　DATE）
-	在職年数（数字　INTEGER(2)）
-	資格1（国家資格）（指定なし　VARCHAR(255)）
-	資格2（民間資格）（指定なし　VARCHAR(255)）
+	在職年数（数字　INT）
+	資格1（国家資格）（指定なし　VARCHAR(100)）
+	資格2（民間資格）（指定なし　VARCHAR(100)）
 	備考（指定なし　VARCHAR(255)）
 	最終評価日時（年月日　時分秒　TIMESTAMP）
 	評価者ID（英数字10文字　VARCHAR(10)　重複不可　USERのIDと一致）
 
- 4.STAFF_EVALUATION
+ 4.STAFF_EVALUATION　作成
 	職員番号（英数字10文字　VARCHAR(10)　重複不可 IDとの相関関係はなし）
-	氏名（指定なし　VARCHAR(10)）
-	部署（）
-	役職（）
-	評価項目1
-	評価項目2
-	評価項目3
-	評価項目4
-	評価項目5
-	評価項目6
-	評価項目7
-	評価項目8
-	評価項目9
-	評価項目10
-	評価結果
+	氏名（指定なし　VARCHAR(100)）
+	部署（指定なし　VARCHAR(100)）
+	役職（指定なし　VARCHAR(100)）
+	評価項目1（指定なし　VARCHAR(100)）
+	評価項目2（指定なし　VARCHAR(100)）
+	評価項目3（指定なし　VARCHAR(100)）
+	評価項目4（指定なし　VARCHAR(100)）
+	評価項目5（指定なし　VARCHAR(100)）
+	評価項目6（指定なし　VARCHAR(100)）
+	評価項目7（指定なし　VARCHAR(100)）
+	評価項目8（指定なし　VARCHAR(100)）
+	評価項目9（指定なし　VARCHAR(100)）
+	評価項目10（指定なし　VARCHAR(100)）
+	評価結果（指定なし　VARCHAR(100)）
 	備考（指定なし　VARCHAR(255)）
 	最終評価日時（年月日　時分秒　TIMESTAMP）
-	評価者ID（英数字10文字　VARCHAR(10)　重複不可　USERのIDと一致）
+	評価者ID（英数字10文字　VARCHAR(10)　重複不可　USERSのIDと一致）
 
- 3.CUSTOMER_EVALUATION
+ 3.CUSTOMER_EVALUATION　作成
 	利用者番号（英数字10文字　VARCHAR(10)　重複不可 IDとの相関関係はなし）
-	氏名（指定なし　VARCHAR(10)）
-	評価項目1
-	評価項目2
-	評価項目3
-	評価項目4
-	評価項目5
-	評価項目6
-	評価項目7
-	評価項目8
-	評価項目9
-	評価項目10
-	評価結果
+	氏名（指定なし　VARCHAR(100)）
+	評価項目1（指定なし　VARCHAR(100)）
+	評価項目2（指定なし　VARCHAR(100)）
+	評価項目3（指定なし　VARCHAR(100)）
+	評価項目4（指定なし　VARCHAR(100)）
+	評価項目5（指定なし　VARCHAR(100)）
+	評価項目6（指定なし　VARCHAR(100)）
+	評価項目7（指定なし　VARCHAR(100)）
+	評価項目8（指定なし　VARCHAR(100)）
+	評価項目9（指定なし　VARCHAR(100)）
+	評価項目10（指定なし　VARCHAR(100)）
+	評価結果（指定なし　VARCHAR(100)）
 	備考（指定なし　VARCHAR(255)）
 	最終評価日時（年月日　時分秒　TIMESTAMP）
-	評価者ID（英数字10文字　VARCHAR(10)　重複不可　USERのIDと一致）
+	評価者ID（英数字10文字　VARCHAR(10)　重複不可　USERSのIDと一致）
 
 
 ・備考

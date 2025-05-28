@@ -55,3 +55,10 @@ CustomerEvaluationServlet.java)
 
 ・プログラム作成(staffDAO.java、customerDAO.java、UserListServlet.java、StaffListServlet.java、
 CustomerListServlet.java)
+
+2025年5月28日
+
+・要件定義書　修正
+
+未完成にて終了
+

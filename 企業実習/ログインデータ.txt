@@ -1,0 +1,2 @@
+admin00001	adminpas	管理者太郎	ADM
+staff00001	staffpas	職員花子	STA
