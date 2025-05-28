@@ -50,7 +50,7 @@ public class Login extends HttpServlet {
         }
 
         // 結果をJSPに渡して表示
-        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/loginResult.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/main.jsp");
         dispatcher.forward(request, response);
     }
 }

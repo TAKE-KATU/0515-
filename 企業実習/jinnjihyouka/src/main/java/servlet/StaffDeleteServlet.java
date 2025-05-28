@@ -10,25 +10,18 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import dao.StaffDAO;
 
-@WebServlet("/StaffDelete")
+@WebServlet("/staffDelete")
 public class StaffDeleteServlet extends HttpServlet {
-    private static final long serialVersionUID = 1L;
-
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-        throws ServletException, IOException {
-        
-        request.setCharacterEncoding("UTF-8");
+            throws ServletException, IOException {
         String staffId = request.getParameter("staffId");
-
-        if (staffId == null || staffId.isEmpty()) {
-            request.getRequestDispatcher("/WEB-INF/jsp/staffDeleteError.jsp").forward(request, response);
-            return;
-        }
-
         StaffDAO dao = new StaffDAO();
-        boolean result = dao.deleteStaff(staffId);
+        dao.delete(staffId);
+        response.sendRedirect("staff");
+    }
 
-        String path = result ? "/WEB-INF/jsp/staffDeleteSucces.jsp" : "/WEB-INF/jsp/staffDeleteError.jsp";
-        request.getRequestDispatcher(path).forward(request, response);
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.getRequestDispatcher("/WEB-INF/jsp/staffDelete.jsp").forward(request, response);
     }
 }

@@ -47,14 +47,14 @@
 <!--表↑-->
 
 
-<a href="newStaff">新規職員登録</a>
-<a href="staffDelete">職員削除</a>
-<a href="staffEvaluation">職員評価</a>
+<a href="NewStaff">新規職員登録</a>
+<a href="StaffDelete">職員削除</a>
+<a href="StaffEvaluation">職員評価</a>
 
-<a href="user">ユーザー</a>
-<a href="staff">職員</a>
-<a href="customer">利用者</a>
-<a href="main">メイン画面へ戻る</a>
+<a href="User">ユーザー</a>
+<a href="Staff">職員</a>
+<a href="Customer">利用者</a>
+<a href="Main">メイン画面へ戻る</a>
 
 </body>
 </html>

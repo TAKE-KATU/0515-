@@ -12,7 +12,7 @@ import java.util.List;
 import model.Staff;
 
 public class StaffDAO {
-    private final String URL = "jdbc:h2:~/test"; // H2用：ローカルに test.mv.db を作成
+    private final String URL = "jdbc:h2:~/desktop/DB/jinji"; // H2用：ローカルに test.mv.db を作成
     private final String USER = "sa";
     private final String PASSWORD = "";
 

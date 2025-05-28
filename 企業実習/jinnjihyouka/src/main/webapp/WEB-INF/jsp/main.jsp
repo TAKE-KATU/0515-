@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page import="model.User,java.util.List, java.text.SimpleDateFormat" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +10,17 @@
 </head>
 <body>
 <h1>人事評価システム</h1>
+
+<%
+User loginUser = (User) session.getAttribute("loginUser");
+if (loginUser == null) {
+%>
+    <p>ログイン情報が取得できません。ログインし直してください。</p>
+    <a href="index.jsp">ログイン画面へ</a>
+<%
+    return; // それ以上実行しない
+}
+%>
 <p>
 <%= loginUser.getName() %>さん、ログイン中
 <a href="Logout">ログアウト</a>
@@ -27,9 +39,9 @@
 <!--表↑-->
 
 
-<a href="user">ユーザー</a>
-<a href="staff">職員</a>
-<a href="customer">利用者</a>
+<a href="User">ユーザー</a>
+<a href="Staff">職員</a>
+<a href="Customer">利用者</a>
 
 </body>
 </html>

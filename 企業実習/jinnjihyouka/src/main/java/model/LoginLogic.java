@@ -14,6 +14,7 @@ public class LoginLogic {
             System.out.println("ユーザーが見つかりませんでした");
         }
 
+
         return foundUser != null;
     }
 }

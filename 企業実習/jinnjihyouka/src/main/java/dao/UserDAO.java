@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,7 @@ import model.User;
 
 public class UserDAO {
 	
-	private final String JDBC_URL = "jdbc:h2:~/desktop/DB/H2";
+	private final String JDBC_URL = "jdbc:h2:~/desktop/DB/jinji";
 	private final String DB_USER="sa";
 	private final String DB_PASS="";
 	
@@ -45,13 +46,13 @@ public class UserDAO {
 		return udbList;
 	}
 	public User findByIdAndPass(String id, String pass) {
-	    System.out.println("検索中: id=" + id + ", pass=" + pass);  // 入力された名前とパスワードを出力
+	    System.out.println("検索中: id=" + id + ", pass=" + pass);
 
 	    try {
 	        Class.forName("org.h2.Driver");
 
 	        try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)) {
-	            String sql = "SELECT * FROM USERS WHERE id = ? AND pass = ?";
+	            String sql = "SELECT id, pass, name, role, lastlogin, lastlogout FROM USERS WHERE id = ? AND pass = ?";
 	            PreparedStatement pStmt = conn.prepareStatement(sql);
 	            pStmt.setString(1, id);
 	            pStmt.setString(2, pass);
@@ -60,7 +61,13 @@ public class UserDAO {
 
 	            if (rs.next()) {
 	                System.out.println("該当ユーザーが見つかりました。");
-	                return new User(id, pass);
+	                String userId = rs.getString("id");
+	                String userPass = rs.getString("pass");
+	                String userName = rs.getString("name");
+	                String userRole = rs.getString("role");
+	                Timestamp lastLogin = rs.getTimestamp("LASTLOGIN");
+	                Timestamp lastLogout = rs.getTimestamp("LASTLOGOUT");
+	                return new User(userId, userPass, userName, userRole, lastLogin, lastLogout);
 	            } else {
 	                System.out.println("該当ユーザーが見つかりませんでした。");
 	            }
